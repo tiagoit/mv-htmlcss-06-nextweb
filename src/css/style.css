@@ -94,7 +94,7 @@ nav ul li {
 
 .main-big-news {
   background: url("../../imgs/game.jpg") no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 500px;
   grid-column: span 2;
   grid-row: span 2;
@@ -107,7 +107,8 @@ nav ul li {
 
 .main-third-news {
   background: url("../../imgs/r-facebook.png") no-repeat;
-  background-size: contain;
+  background-size: cover;
+  margin-top: -3px;
 }
 
 .deals {

@@ -90,24 +90,78 @@ nav ul li {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5px;
+  padding: 5px;
+  height: 490px;
+  overflow: hidden;
 }
 
 .main-big-news {
-  background: url("../../imgs/game.jpg") no-repeat;
-  background-size: contain;
-  height: 500px;
+  height: 100%;
   grid-column: span 2;
   grid-row: span 2;
 }
 
-.main-second-news {
-  background: url("../../imgs/assistant.png") no-repeat;
-  background-size: contain;
+.main-big-news img {
+  width: 100%;
+}
+
+.main-second-news, .main-third-news {
+  grid-column: span 1;
+  width: 100%;
+  grid-row: span 1;
+}
+
+.main-second-news img {
+  width: 100%;
+  height: 100%;
 }
 
 .main-third-news {
-  background: url("../../imgs/r-facebook.png") no-repeat;
-  background-size: contain;
+  margin-top: -2px;
+}
+
+.main-third-news img {
+  width: 100%;
+  height: 100%;
+}
+
+.news, .events {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 120px;
+  grid-gap: 25px;
+}
+
+.news h1, .events h1{
+  grid-column: span 4;
+  color: red;
+  font-size: 1.7em;
+  font-weight: 700;
+  letter-spacing: .01em;
+}
+
+.article-setup {
+  grid-column: span 1;
+}
+
+.article-setup img {
+  width: 100%;
+  height: 160px;
+}
+
+.article-setup a {
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.author a, .author{
+  padding-top: 9px;
+  font-size: .9em;
+  font-weight: 400;
+  color: rgb(163, 163, 163);
 }
 
 .categories {

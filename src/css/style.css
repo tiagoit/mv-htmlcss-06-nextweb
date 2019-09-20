@@ -106,7 +106,8 @@ nav ul li {
   width: 100%;
 }
 
-.main-second-news, .main-third-news {
+.main-second-news,
+.main-third-news {
   grid-column: span 1;
   width: 100%;
   grid-row: span 1;
@@ -126,19 +127,21 @@ nav ul li {
   height: 100%;
 }
 
-.news, .events {
+.news,
+.events {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 120px;
   grid-gap: 25px;
 }
 
-.news h1, .events h1{
+.news h1,
+.events h1 {
   grid-column: span 4;
   color: red;
   font-size: 1.7em;
   font-weight: 700;
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
 }
 
 .article-setup {
@@ -157,9 +160,10 @@ nav ul li {
   line-height: 1.2em;
 }
 
-.author a, .author{
+.author a,
+.author {
   padding-top: 9px;
-  font-size: .9em;
+  font-size: 0.9em;
   font-weight: 400;
   color: rgb(163, 163, 163);
 }
@@ -168,10 +172,11 @@ nav ul li {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 120px;
 }
 
 .cat {
-  max-width: 360px;
+  max-width: 320px;
 }
 
 .cat > .title {
@@ -299,7 +304,7 @@ nav ul li {
 
 .deals {
   height: 400px;
-  margin-top: 40px;
+  margin: 40px 120px;
 }
 
 .deals > .title {

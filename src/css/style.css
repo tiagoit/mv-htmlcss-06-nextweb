@@ -3,20 +3,27 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Share Tech Mono', monospace;
  */
 
-body {
-  font-family: "Open Sans", sans-serif;
+* {
   font-size: 16px;
 }
 
+body {
+  background-image: url("../img/icons-sprite.svg");
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+}
+
+a {
+  color: inherit;
+}
+
 nav a {
-  font-family: "Share Tech Mono", monospace;
   text-decoration: none;
 }
 
 nav > div {
   display: block;
   width: 100%;
-  border: 2px solid red;
 }
 
 nav ul li {
@@ -32,14 +39,75 @@ nav ul li {
 .first-nav {
   background-color: #000;
   font-size: 0.8em;
+  height: 40px;
 }
 
 .first-nav a {
   color: #fff;
 }
 
+.first-nav ul.first-nav-float-left {
+  float: left;
+}
+
+.first-nav ul.first-nav-float-right {
+  float: right;
+  padding-top: 5px;
+}
+
+.first-nav select {
+  background: none;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  font-size: 1.04em;
+  -webkit-appearance: none;
+  -moz-appearance : none;
+  width: 65px;
+}
+
+#events-select {
+  width: 44px;
+  border: none;
+}
+
 .second-nav {
   padding: 20px 15px;
+  font-family: "Share Tech Mono", monospace;
+}
+
+.second-nav a {
+  color: rgb(177, 177, 177);
+  text-transform: uppercase;
+}
+
+.third-nav {
+  background-color: #fd3;
+  font-size: .8em;
+}
+
+.main-news {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.main-big-news {
+  background: url("../../imgs/game.jpg") no-repeat;
+  background-size: contain;
+  height: 500px;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.main-second-news {
+  background: url("../../imgs/assistant.png") no-repeat;
+  background-size: contain;
+}
+
+.main-third-news {
+  background: url("../../imgs/r-facebook.png") no-repeat;
+  background-size: contain;
 }
 
 .deals {

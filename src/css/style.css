@@ -145,13 +145,23 @@ nav ul li {
   grid-column: span 1;
 }
 
-.latest-news-image-wrapper {
-  /* grid-row: span 1; */
-}
-
 .latest-news img {
   width: 100%;
   height: 160px;
+}
+
+.latest-news a {
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.author a, .author{
+  padding-top: 9px;
+  font-size: .9em;
+  font-weight: 400;
+  color: rgb(163, 163, 163);
 }
 
 .deals {

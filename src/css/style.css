@@ -129,18 +129,29 @@ nav ul li {
 .news {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin: 120px;
+  grid-gap: 25px;
 }
 
 .news h1 {
   grid-column: span 4;
+  color: red;
+  font-size: 1.7em;
+  font-weight: 700;
+  letter-spacing: .01em;
 }
 
 .latest-news {
   grid-column: span 1;
 }
 
+.latest-news-image-wrapper {
+  /* grid-row: span 1; */
+}
+
 .latest-news img {
   width: 100%;
+  height: 160px;
 }
 
 .deals {

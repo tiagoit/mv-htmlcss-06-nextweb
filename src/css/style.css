@@ -88,7 +88,7 @@ nav ul li {
 
 .main-news {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
 
@@ -103,8 +103,11 @@ nav ul li {
 .main-second-news {
   background: url("../../imgs/assistant.png") no-repeat;
   background-size: contain;
-  /* grid-column: span 1;
-  width: 100px; */
+}
+
+.main-third-news {
+  background: url("../../imgs/r-facebook.png") no-repeat;
+  background-size: contain;
 }
 
 footer {

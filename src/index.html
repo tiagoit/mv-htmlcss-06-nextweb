@@ -9,15 +9,68 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
   <body>
     <header>
-      <nav></nav>
+      <nav>
+        <div class="first-nav">
+          <ul>
+            <li><a href="#">News</a></li>
+            <li>
+              <select id="events-select">
+                <option value="events"><a href="#">Events</a></option>
+                <option value="hard-fork-summit"
+                  ><a href="#">Hard Fork Summit</a></option
+                >
+                <option value="tnw-2020"><a href="#">TNW2020</a></option>
+              </select>
+            </li>
+            <li>
+              <select id="business-select">
+                <option value="business"><a href="#">Business</a></option>
+                <option value="index"><a href="#">Index</a></option>
+                <option value="tnx-x"><a href="#">TNW X</a></option>
+              </select>
+            </li>
+            <li><a href="#">AMAs</a></li>
+            <li><a href="#">Spaces</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+        <div class="second-nav">
+          <ul>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">Hard Fork</a></li>
+            <li><a href="#">Plugged</a></li>
+            <li><a href="#">Fundamentals</a></li>
+            <li><a href="#">Work 2030</a></li>
+          </ul>
+        </div>
+        <div class="third-nav">
+          <a href="#"
+            >How will blockchain impact fintech and business? Join Hard Fork
+            Summit to find out &rarr;</a
+          >
+        </div>
+      </nav>
     </header>
     <div class="news"></div>
     <div class="events"></div>
     <div class="funding"></div>
     <div class="categories"></div>
-    <section class="deals"></section>
+    <div class="deals"></div>
     <footer>
       <i class="facebook"></i>
     </footer>

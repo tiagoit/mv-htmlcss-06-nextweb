@@ -1,3 +1,47 @@
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Share Tech Mono', monospace;
+ */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+nav a {
+  font-family: "Share Tech Mono", monospace;
+  text-decoration: none;
+}
+
+nav > div {
+  display: block;
+  width: 100%;
+  border: 2px solid red;
+}
+
+nav ul li {
+  display: inline;
+  padding-right: 13px;
+}
+
+.first-nav,
+.third-nav {
+  padding: 8px 15px;
+}
+
+.first-nav {
+  background-color: #000;
+  font-size: 0.8em;
+}
+
+.first-nav a {
+  color: #fff;
+}
+
+.second-nav {
+  padding: 20px 15px;
+}
+
 footer {
   height: 600px;
   border: 1px solid black;

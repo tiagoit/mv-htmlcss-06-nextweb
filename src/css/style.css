@@ -62,7 +62,7 @@ nav ul li {
   border: none;
   font-size: 1.04em;
   -webkit-appearance: none;
-  -moz-appearance : none;
+  -moz-appearance: none;
   width: 65px;
 }
 
@@ -83,7 +83,7 @@ nav ul li {
 
 .third-nav {
   background-color: #fd3;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .main-news {
@@ -110,6 +110,139 @@ nav ul li {
   background-size: contain;
 }
 
+.categories {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cat {
+  max-width: 360px;
+}
+
+.cat > .title {
+  color: #ff4422;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.cat > .image {
+  /* background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1; */
+
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background-size: cover;
+}
+
+.cat > .image.cat-01 {
+  background: url("../img/cat-01.1.jpg") center center no-repeat;
+}
+
+.cat > .image.cat-02 {
+  background: url("../img/cat-02.1.jpg") center center no-repeat;
+}
+
+.cat > .image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+  opacity: 0.6;
+}
+
+/* .cat img {
+  max-width: 360px;
+  z-index: 1;
+  height: 200px;
+} */
+
+.cat .heading {
+  margin: 12px;
+  top: -110px;
+  position: relative;
+  color: #fff;
+}
+
+.cat .heading .tag {
+  font-size: 12px;
+}
+
+.cat .heading .author {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.cat .heading .title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.cat .latest {
+  display: flex;
+  margin-top: -100px;
+  padding-top: 12px;
+  color: #ff4422;
+  background-color: rgba(255, 68, 34, 0.06);
+}
+
+.cat .latest > div {
+  flex: 3;
+  padding: 0 8px;
+}
+
+.cat .latest > img {
+  flex: 1;
+  max-width: 25%;
+  height: 80px;
+  margin-top: -10px;
+}
+
+.cat .latest .tag {
+  font-size: 12px;
+}
+
+.cat .latest .text {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cat ul {
+  margin: 8px 0 24px 8px;
+}
+
+.cat ul li {
+  padding: 8px 0;
+  padding-left: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.cat ul li::before {
+  content: "\2022";
+  color: #ff4422;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* DEALS */
+
 .deals {
   height: 400px;
   margin-top: 40px;
@@ -117,7 +250,6 @@ nav ul li {
 
 .deals > .title {
   color: #ff4422;
-  /* font-family: "Avalon"; */
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 24px;
@@ -170,6 +302,8 @@ nav ul li {
   padding: 0;
   margin: -2em;
 }
+
+/* FOOTER */
 
 footer .first-row {
   background-color: rgb(19, 19, 19);

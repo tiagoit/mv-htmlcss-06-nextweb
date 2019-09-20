@@ -1,0 +1,16 @@
+footer {
+  height: 600px;
+  border: 1px solid black;
+}
+
+footer i {
+  background: transparent url("../img/icons-sprite.svg") no-repeat;
+  background-size: 1296px 1296px;
+  height: 16px;
+  width: 16px;
+  display: block;
+}
+
+footer i.facebook {
+  background-position: -256px -256px;
+}

@@ -90,7 +90,10 @@ nav ul li {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5px;
+  padding: 5px;
 }
+
 
 .main-big-news {
   background: url("../../imgs/game.jpg") no-repeat;

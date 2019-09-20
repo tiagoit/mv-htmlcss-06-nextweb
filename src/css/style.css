@@ -126,6 +126,23 @@ nav ul li {
   height: 100%;
 }
 
+.news {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.news h1 {
+  grid-column: span 4;
+}
+
+.latest-news {
+  grid-column: span 1;
+}
+
+.latest-news img {
+  width: 100%;
+}
+
 .deals {
   height: 400px;
   margin-top: 40px;

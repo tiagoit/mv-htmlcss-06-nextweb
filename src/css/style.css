@@ -132,9 +132,11 @@ nav ul li {
 .news,
 .events {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  /* grid-template-columns: repeat(autofill minmax(2fr, 1fr)); */
   /* margin: 120px; */
   grid-gap: 25px;
+  /* object-fit: cover; */
 }
 
 .news h1,
@@ -149,9 +151,7 @@ nav ul li {
 .article-setup {
   grid-column: span 1;
   width: 290px;
-  align-content: center;
-  align-items: center;
-  justify-self: center;
+  justify-items: center;
 
 }
 

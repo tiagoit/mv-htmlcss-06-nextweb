@@ -133,10 +133,8 @@ nav ul li {
 .events {
   display: grid;
   width: 100%;
-  /* grid-template-columns: repeat(autofill minmax(2fr, 1fr)); */
-  /* margin: 120px; */
   grid-gap: 25px;
-  /* object-fit: cover; */
+  justify-content: center;
 }
 
 .news h1,
@@ -150,7 +148,8 @@ nav ul li {
 
 .article-setup {
   grid-column: span 1;
-  width: 290px;
+
+  min-width: 290px;
   justify-items: center;
 
 }

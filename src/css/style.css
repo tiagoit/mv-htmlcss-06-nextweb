@@ -17,6 +17,10 @@ a {
   color: inherit;
 }
 
+h4 {
+  font-weight: 700;
+}
+
 /*    HEADER/NAV     */
 
 header {
@@ -101,6 +105,7 @@ nav ul li {
   grid-template-rows: repeat(6, 1fr);
   grid-gap: 5px;
   padding: 5px;
+  height: 500px;
 }
 
 .main-big-news {
@@ -137,21 +142,22 @@ nav ul li {
   object-fit: cover;
 }
 
-.four-square-layout {
+/* NEWS AND EVENTS  */
+
+.fsq-layout {
   max-width: 1330px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
-.enable-article-grid {
+.enable-fsq-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 290px));
+  grid-template-columns: repeat(auto-fit, 290px);
   margin: 0 auto;
-  grid-gap: 25px;
   justify-content: center;
 }
 
-.news h1,
-.events h1 {
+.fsq-title {
   margin-top: 80px;
   margin-bottom: 60px;
   color: red;
@@ -160,23 +166,19 @@ nav ul li {
   letter-spacing: 0.01em;
 }
 
-.article-setup {
-  grid-column: span 1;
-  width: 290px;
+.fsq-box-setup {
+  max-width: fit-content;
   justify-self: center;
   margin-bottom: 80px;
 }
 
-.article-setup img {
-  width: 290px;
-  height: 160px;
+.fsq-box-setup img {
+  height: 140px;
   object-fit: cover;
 }
 
-.article-setup a {
+.fsq-box-setup a {
   text-decoration: none;
-  font-size: 1.1em;
-  font-weight: 700;
   line-height: 1.2em;
 }
 
@@ -452,20 +454,41 @@ footer i.facebook {
 
 /*    MEDIA/RESPONSIVE    */
 
-@media screen and (min-width: 1280px) {
-
-}
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1280px) {
 
 }
 
-@media screen and (min-width: 768px) {
-  .news {
-    grid-column: repeat(3, minmax(290px, 350px));
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+  .main-news {
+    display: block;
+    height: auto;
   }
-}
+  
+  .main-news > div {
+    height: 200px;
+    padding: 4px;
+  }
 
-@media screen and (min-width: 480px) {
+  .enable-block {
+    display: inline;
+  }
+
+  .fsq-box-setup {
+    display: flex;
+  }
+  
+  .fsq-box-setup img {
+    height: 75px;
+    width: 75px;
+  }
+  
+  .fsq-title-author {
+    display: block;
+    width: 100%;
+  }
 
 }
 

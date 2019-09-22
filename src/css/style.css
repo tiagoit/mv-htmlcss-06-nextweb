@@ -17,6 +17,12 @@ a {
   color: inherit;
 }
 
+/*    HEADER/NAV     */
+
+header {
+  width: 100%;
+}
+
 nav a {
   text-decoration: none;
 }
@@ -86,13 +92,15 @@ nav ul li {
   font-size: 0.9em;
 }
 
+/*     NEWS    */
+
+
 .main-news {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-gap: 5px;
   padding: 5px;
-  height: 550px;
 }
 
 .main-big-news {
@@ -129,26 +137,31 @@ nav ul li {
   object-fit: cover;
 }
 
+.four-square-layout {
+  max-width: 1330px;
+  margin: 0 auto;
+}
 
 .enable-article-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 290px));
+  margin: 0 auto;
   grid-gap: 25px;
   justify-content: center;
 }
 
 .news h1,
 .events h1 {
-  color: red;
   margin-top: 80px;
+  margin-bottom: 60px;
+  color: red;
   font-size: 1.7em;
   font-weight: 700;
   letter-spacing: 0.01em;
-  margin-bottom: 60px;
 }
 
 .article-setup {
-  grid-column: auto/span 1;
+  grid-column: span 1;
   width: 290px;
   justify-self: center;
   margin-bottom: 80px;
@@ -437,8 +450,22 @@ footer i.facebook {
   background-position: -256px -256px;
 }
 
+/*    MEDIA/RESPONSIVE    */
+
+@media screen and (min-width: 1280px) {
+
+}
+@media screen and (min-width: 1024px) {
+
+}
+
 @media screen and (min-width: 768px) {
   .news {
     grid-column: repeat(3, minmax(290px, 350px));
   }
 }
+
+@media screen and (min-width: 480px) {
+
+}
+

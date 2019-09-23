@@ -29,13 +29,14 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    0.44turn,
-    rgba(221, 66, 66, 0.9) 0%,
-    rgba(221, 66, 66, 0.9) 20%,
-    transparent 70%,
-    rgba(0, 0, 0, 0.9) 95%
-  );
+  background:
+    linear-gradient(
+      0.44turn,
+      rgba(221, 66, 66, 0.9) 0%,
+      rgba(221, 66, 66, 0.9) 20%,
+      transparent 70%,
+      rgba(0, 0, 0, 0.9) 95%
+    );
 }
 
 .tnw-logo-header > img {
@@ -147,7 +148,11 @@ nav ul li {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(transparent 0%, black 90%);
+  background: 
+    linear-gradient(
+      transparent 0%, 
+      black 90%
+    );
 }
 
 .main-big-news a,
@@ -524,7 +529,6 @@ i.suitcase {
 
 .deals {
   height: auto;
-  margin: 40px 120px;
   max-width: 1192px;
   margin: 0 auto;
   padding: 0 12px;
@@ -813,15 +817,12 @@ footer i.mail {
     display: block;
     width: 100%;
     margin-left: 15px;
+    font-size: 0.9em;
   }
 
   .fsq-title {
     font-size: 1.4em;
     margin-bottom: 30px;
-  }
-
-  .fsq-title-author {
-    font-size: 0.9em;
   }
 
   /* FUNDING */

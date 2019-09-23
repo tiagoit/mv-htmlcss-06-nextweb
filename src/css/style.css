@@ -10,7 +10,6 @@ font-family: 'Share Tech Mono', monospace;
 body {
   font-family: "Open Sans", sans-serif;
   color: #000;
-
 }
 
 a {
@@ -37,7 +36,7 @@ nav a {
   text-decoration: none;
 }
 
-nav>div {
+nav > div {
   display: block;
   width: 100%;
 }
@@ -71,7 +70,6 @@ nav ul li {
   padding-top: 5px;
 }
 
-
 .first-nav select {
   background: none;
   color: #fff;
@@ -104,7 +102,6 @@ nav ul li {
 }
 
 /*     NEWS    */
-
 
 .main-news {
   display: grid;
@@ -141,7 +138,6 @@ nav ul li {
   height: 100%;
   object-fit: cover;
 }
-
 
 .main-second-news,
 .main-third-news {
@@ -220,21 +216,25 @@ nav ul li {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 120px;
+  max-width: 1192px;
+  margin: 0 auto;
+  padding: 0 12px;
 }
 
 .cat {
-  max-width: 320px;
+  flex: 1;
+  min-width: 320px;
+  padding: 12px;
 }
 
-.cat>.title {
+.cat > .title {
   color: #ff4422;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 24px;
 }
 
-.cat>.image {
+.cat > .image {
   /* background-color: #000;
   background-size: cover;
   background-position: 50%;
@@ -251,15 +251,15 @@ nav ul li {
   background-size: cover;
 }
 
-.cat>.image.cat-01 {
-  background: url("../img/cat-01.1.jpg") center center no-repeat;
+.cat > .image.cat-01 {
+  background: url("../../imgs/cat-01.1.jpg") center center no-repeat;
 }
 
-.cat>.image.cat-02 {
-  background: url("../img/cat-02.1.jpg") center center no-repeat;
+.cat > .image.cat-02 {
+  background: url("../../imgs/cat-02.1.jpg") center center no-repeat;
 }
 
-.cat>.image::before {
+.cat > .image::before {
   content: "";
   position: absolute;
   top: 0;
@@ -269,12 +269,6 @@ nav ul li {
   background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
   opacity: 0.6;
 }
-
-/* .cat img {
-  max-width: 360px;
-  z-index: 1;
-  height: 200px;
-} */
 
 .cat .heading {
   margin: 12px;
@@ -305,12 +299,12 @@ nav ul li {
   background-color: rgba(255, 68, 34, 0.06);
 }
 
-.cat .latest>div {
+.cat .latest > div {
   flex: 3;
   padding: 0 8px;
 }
 
-.cat .latest>img {
+.cat .latest > img {
   flex: 1;
   max-width: 25%;
   height: 80px;
@@ -353,16 +347,19 @@ nav ul li {
 .deals {
   height: auto;
   margin: 40px 120px;
+  max-width: 1192px;
+  margin: 0 auto;
+  padding: 0 12px;
 }
 
-.deals>.title {
+.deals > .title {
   color: #ff4422;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 24px;
 }
 
-.deals>.title>.see-all {
+.deals > .title > .see-all {
   float: right;
   font-size: 14px;
   font-weight: normal;
@@ -375,7 +372,7 @@ nav ul li {
 }
 
 .deal {
-  max-width: 270px;
+  flex: 1;
   min-width: 200px;
   margin: 0 8px 24px;
   margin-bottom: 24px;
@@ -398,8 +395,7 @@ nav ul li {
 }
 
 .deal img {
-  max-width: 270px;
-  min-width: 200px;
+  max-width: 100%;
 }
 
 .deal a {
@@ -411,7 +407,6 @@ nav ul li {
 }
 
 /* FOOTER */
-
 
 footer .first-row {
   background-color: rgb(19, 19, 19);
@@ -431,6 +426,7 @@ footer .first-row ul.social li {
   background-color: rgb(85, 85, 85);
   border-radius: 50%;
   border: 2px solid rgb(85, 85, 85);
+  cursor: pointer;
 }
 
 footer .first-row ul.social li:hover {
@@ -467,20 +463,47 @@ footer .love {
 }
 
 footer i {
-  background: transparent url("../img/icons-sprite.svg") no-repeat;
+  background: transparent url("../../imgs/icons-sprite.svg") no-repeat;
   background-size: 1296px 1296px;
   height: 16px;
   width: 16px;
   display: block;
+  filter: brightness(100);
+  margin: 10px auto 0;
 }
 
 footer i.facebook {
-  background-position: -256px -256px;
+  background-position: -272px -272px;
+}
+
+footer i.twitter {
+  background-position: -1024px -1024px;
+}
+
+footer i.youtube {
+  background-position: -1280px -1280px;
+}
+
+footer i.instagram {
+  background-position: -416px -416px;
+}
+
+footer i.pinterest {
+  background-position: -672px -672px;
+}
+
+footer i.rss {
+  background-position: -816px -816px;
+}
+
+footer i.mail {
+  background-position: -576px -576px;
 }
 
 /*    MEDIA/RESPONSIVE    */
 
-@media screen and (max-width: 1280px) {}
+@media screen and (max-width: 1280px) {
+}
 
 @media screen and (max-width: 1024px) {
   .tnw-logo-header {
@@ -496,9 +519,14 @@ footer i.facebook {
     display: block;
     /* grid-column: 1/2; */
     /* grid-row: 1/2; */
-    background: linear-gradient(0.44turn, rgb(122, 34, 138) 0%, red 50%, red 100%);
+    background: linear-gradient(
+      0.44turn,
+      rgb(122, 34, 138) 0%,
+      red 50%,
+      red 100%
+    );
   }
-  
+
   .responsive-tnw-logo {
     position: relative;
     left: 20px;
@@ -523,13 +551,13 @@ footer i.facebook {
     height: auto;
   }
 
-  .main-news>div {
+  .main-news > div {
     height: 200px;
     padding: 4px;
   }
 
   .main-big-news::after {
-    content: '';
+    content: "";
     background: none;
   }
 
@@ -551,5 +579,4 @@ footer i.facebook {
     width: 100%;
     margin-left: 15px;
   }
-
 }

@@ -31,7 +31,7 @@ nav a {
   text-decoration: none;
 }
 
-nav > div {
+nav>div {
   display: block;
   width: 100%;
 }
@@ -127,7 +127,7 @@ nav ul li {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(0.44turn, red 0%, red 20% , transparent 60%);
+  background: linear-gradient(0.44turn, red 0%, red 20%, transparent 60%);
   opacity: 0.8;
   width: 100%;
   height: 100%;
@@ -217,14 +217,14 @@ nav ul li {
   max-width: 320px;
 }
 
-.cat > .title {
+.cat>.title {
   color: #ff4422;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 24px;
 }
 
-.cat > .image {
+.cat>.image {
   /* background-color: #000;
   background-size: cover;
   background-position: 50%;
@@ -241,15 +241,15 @@ nav ul li {
   background-size: cover;
 }
 
-.cat > .image.cat-01 {
+.cat>.image.cat-01 {
   background: url("../img/cat-01.1.jpg") center center no-repeat;
 }
 
-.cat > .image.cat-02 {
+.cat>.image.cat-02 {
   background: url("../img/cat-02.1.jpg") center center no-repeat;
 }
 
-.cat > .image::before {
+.cat>.image::before {
   content: "";
   position: absolute;
   top: 0;
@@ -295,12 +295,12 @@ nav ul li {
   background-color: rgba(255, 68, 34, 0.06);
 }
 
-.cat .latest > div {
+.cat .latest>div {
   flex: 3;
   padding: 0 8px;
 }
 
-.cat .latest > img {
+.cat .latest>img {
   flex: 1;
   max-width: 25%;
   height: 80px;
@@ -345,14 +345,14 @@ nav ul li {
   margin: 40px 120px;
 }
 
-.deals > .title {
+.deals>.title {
   color: #ff4422;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 24px;
 }
 
-.deals > .title > .see-all {
+.deals>.title>.see-all {
   float: right;
   font-size: 14px;
   font-weight: normal;
@@ -470,22 +470,24 @@ footer i.facebook {
 
 /*    MEDIA/RESPONSIVE    */
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {}
 
-}
-
-@media screen and (max-width: 1024px) {
-}
+@media screen and (max-width: 1024px) {}
 
 @media screen and (max-width: 768px) {
   .main-news {
     display: block;
     height: auto;
   }
-  
-  .main-news > div {
+
+  .main-news>div {
     height: 200px;
     padding: 4px;
+  }
+
+  .main-big-news::after {
+    content: '';
+    background: none;
   }
 
   .enable-block {
@@ -495,16 +497,15 @@ footer i.facebook {
   .fsq-box-setup {
     display: flex;
   }
-  
+
   .fsq-box-setup img {
     height: 75px;
     width: 75px;
   }
-  
+
   .fsq-title-author {
     display: block;
     width: 100%;
   }
 
 }
-

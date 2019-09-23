@@ -1,8 +1,3 @@
-/* 
-font-family: 'Open Sans', sans-serif;
-font-family: 'Share Tech Mono', monospace;
- */
-
 * {
   font-size: 16px;
 }
@@ -302,7 +297,7 @@ nav ul li {
 }
 
 .funding h2 {
-  color: #ff4422;
+  color: #f42;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 24px;
@@ -311,10 +306,10 @@ nav ul li {
 .funding .section-links {
   float: right;
   margin-top: -36px;
-  color: #ff4422;
+  color: #f42;
 }
 
-.funding .section-links > span:not(:last-child):after {
+.funding .section-links > span:not(:last-child)::after {
   content: " | ";
 }
 
@@ -420,7 +415,7 @@ i.suitcase {
 }
 
 .cat > .title {
-  color: #ff4422;
+  color: #f42;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 24px;
@@ -478,7 +473,7 @@ i.suitcase {
   display: flex;
   margin-top: -100px;
   padding-top: 12px;
-  color: #ff4422;
+  color: #f42;
   background-color: rgba(255, 68, 34, 0.06);
 }
 
@@ -518,7 +513,7 @@ i.suitcase {
 
 .cat ul li::before {
   content: "\2022";
-  color: #ff4422;
+  color: #f42;
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -536,7 +531,7 @@ i.suitcase {
 }
 
 .deals > .title {
-  color: #ff4422;
+  color: #f42;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 24px;
@@ -623,7 +618,7 @@ footer .first-row .social a {
 
 footer .links {
   padding: 32px 0;
-  color: #aaaaaa;
+  color: #aaa;
   text-transform: uppercase;
   font-size: 12px;
 }
@@ -749,8 +744,8 @@ footer i.mail {
   .hamburger-menu {
     visibility: visible;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     padding: 10px 10px;
   }
 

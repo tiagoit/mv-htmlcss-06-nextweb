@@ -686,11 +686,7 @@ footer i.mail {
 
   .tnw-logo-header-responsive {
     display: block;
-    background:
-      linear-gradient(0.44turn,
-        rgb(122, 34, 138) 0%,
-        red 50%,
-        red 100%);
+    background: linear-gradient(0.44turn, rgb(122, 34, 138) 0%, red 50%, red 100%);
   }
 
   .responsive-tnw-logo {
@@ -745,6 +741,7 @@ footer i.mail {
   .fsq-title {
     margin-left: 30px;
   }
+  
   .fsq-box-setup img {
     height: 120px;
   }

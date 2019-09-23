@@ -131,15 +131,17 @@ nav ul li {
   height: 500px;
 }
 
-.main-big-news, .sub-news {
+.main-big-news,
+.sub-news {
   position: relative;
   grid-column: span 2;
   grid-row: span 6;
   color: #fff;
 }
 
-.main-big-news::after, .sub-news::after {
-  content:'';
+.main-big-news::after,
+.sub-news::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -148,18 +150,21 @@ nav ul li {
   background: linear-gradient(transparent 0%, black 90%);
 }
 
-.main-big-news a, .sub-news a {
+.main-big-news a,
+.sub-news a {
   text-decoration: none;
   color: #fff;
 }
 
-.main-big-news-info, .sub-news-info {
+.main-big-news-info,
+.sub-news-info {
   position: absolute;
   height: 100%;
   width: 100%;
 }
 
-.main-big-news-title, .sub-news-title {
+.main-big-news-title,
+.sub-news-title {
   position: absolute;
   font-size: 3em;
   font-weight: 700;
@@ -168,11 +173,13 @@ nav ul li {
   z-index: 1;
 }
 
-.mbn-author-time-share, .sub-author-time-share {
+.mbn-author-time-share,
+.sub-author-time-share {
   display: inline-block;
 }
 
-.main-big-news-category, .sub-news-category {
+.main-big-news-category,
+.sub-news-category {
   font-size: 0.3em;
   font-size: 0.25em;
   font-weight: 400;
@@ -233,8 +240,6 @@ nav ul li {
   font-size: 0.5em;
 }
 
-
-
 /* NEWS AND EVENTS  */
 
 .fsq-layout {
@@ -283,6 +288,99 @@ nav ul li {
   color: rgb(163, 163, 163);
 }
 
+/* FUNDING */
+.funding {
+  max-width: 1192px;
+  margin: 0 auto;
+  padding: 0 12px;
+  margin-bottom: 36px;
+}
+
+.funding h2 {
+  color: #ff4422;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.funds-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.fund {
+  flex: 1;
+  padding: 0 12px;
+}
+
+.fund img {
+  height: 48px;
+  display: inline-block;
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
+.fund h3 {
+  height: 40px;
+  background: #f42;
+  color: #fff;
+  font-weight: bold;
+  padding-left: 80px;
+  padding-top: 12px;
+}
+
+.fund .val {
+  height: 55px;
+  background: rgba(255, 68, 34, 0.08);
+  padding-left: 80px;
+  padding-top: 8px;
+}
+
+.fund .val .value {
+  font-weight: bold;
+}
+
+.fund .val .series {
+  font-size: 12px;
+}
+
+.fund .tags {
+  border-bottom: 1px solid pink;
+  opacity: 0.8;
+}
+
+.fund .tags div {
+  height: 40px;
+  padding-top: 12px;
+  font-size: 12px;
+}
+
+.fund i {
+  background: transparent url(../../imgs/icons-sprite.svg) no-repeat;
+  background-size: 1296px 1296px;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  filter: brightness(100);
+  margin-right: 8px;
+}
+
+i.tag {
+  background-position: -976px -976px;
+}
+
+i.suitcase {
+  background-position: -48px -48px;
+}
+
+.fund .text {
+  font-size: 12px;
+  opacity: 0.8;
+  padding: 8px;
+}
+
 /* CATEGORIES  */
 
 .categories {
@@ -308,16 +406,6 @@ nav ul li {
 }
 
 .cat > .image {
-  /* background-color: #000;
-  background-size: cover;
-  background-position: 50%;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1; */
-
   position: relative;
   width: 100%;
   height: 280px;
@@ -362,6 +450,7 @@ nav ul li {
 .cat .heading .title {
   font-weight: bold;
   font-size: 20px;
+  min-height: 36px;
 }
 
 .cat .latest {
@@ -685,6 +774,16 @@ footer i.mail {
     font-size: 0.9em;
   }
 
+  /* CATEGORIES */
+  .categories .cat {
+    min-width: 100%;
+  }
+
+  .categories .cat .image {
+    height: 360px;
+  }
+
+  /* DEALS */
   .deal {
     min-width: 100%;
     margin-bottom: 32px;

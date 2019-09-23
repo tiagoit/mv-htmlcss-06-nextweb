@@ -30,16 +30,14 @@ header {
   width: 100%;
   height: 100%;
   background:
-    linear-gradient(
-      0.44turn,
+    linear-gradient(0.44turn,
       rgba(221, 66, 66, 0.9) 0%,
       rgba(221, 66, 66, 0.9) 20%,
       transparent 70%,
-      rgba(0, 0, 0, 0.9) 95%
-    );
+      rgba(0, 0, 0, 0.9) 95%);
 }
 
-.tnw-logo-header > img {
+.tnw-logo-header>img {
   padding: 20px;
 }
 
@@ -51,7 +49,7 @@ nav a {
   text-decoration: none;
 }
 
-nav > div {
+nav>div {
   display: block;
   width: 100%;
 }
@@ -251,9 +249,10 @@ nav ul li {
 
 .enable-fsq-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 290px);
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, 240px);
+  grid-gap: 30px;
   justify-content: center;
+  padding: 20px;
 }
 
 .fsq-title {
@@ -310,7 +309,7 @@ nav ul li {
   color: #f42;
 }
 
-.funding .section-links > span:not(:last-child)::after {
+.funding .section-links>span:not(:last-child)::after {
   content: " | ";
 }
 
@@ -415,29 +414,29 @@ i.suitcase {
   padding: 12px;
 }
 
-.cat > .title {
+.cat>.title {
   color: #f42;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 24px;
 }
 
-.cat > .image {
+.cat>.image {
   position: relative;
   width: 100%;
   height: 280px;
   background-size: cover;
 }
 
-.cat > .image.cat-01 {
+.cat>.image.cat-01 {
   background: url("../../imgs/cat-01.1.jpg") center center no-repeat;
 }
 
-.cat > .image.cat-02 {
+.cat>.image.cat-02 {
   background: url("../../imgs/cat-02.1.jpg") center center no-repeat;
 }
 
-.cat > .image::before {
+.cat>.image::before {
   content: "";
   position: absolute;
   top: 0;
@@ -478,12 +477,12 @@ i.suitcase {
   background-color: rgba(255, 68, 34, 0.06);
 }
 
-.cat .latest > div {
+.cat .latest>div {
   flex: 3;
   padding: 0 8px;
 }
 
-.cat .latest > img {
+.cat .latest>img {
   flex: 1;
   max-width: 25%;
   height: 80px;
@@ -530,14 +529,14 @@ i.suitcase {
   padding: 0 12px;
 }
 
-.deals > div.title {
+.deals>div.title {
   color: #f42;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 24px;
 }
 
-.deals > .title > .see-all {
+.deals>.title>.see-all {
   float: right;
   font-size: 14px;
   font-weight: normal;
@@ -680,7 +679,7 @@ footer i.mail {
 
 /*    MEDIA/RESPONSIVE    */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1022px) {
   header {
     display: grid;
     grid-template-columns: 100px 1fr;
@@ -693,12 +692,10 @@ footer i.mail {
   .tnw-logo-header-responsive {
     display: block;
     background:
-      linear-gradient(
-        0.44turn,
+      linear-gradient(0.44turn,
         rgb(122, 34, 138) 0%,
         red 50%,
-        red 100%
-      );
+        red 100%);
   }
 
   .responsive-tnw-logo {
@@ -738,6 +735,23 @@ footer i.mail {
 
   .sub-news-title {
     font-size: 1.3em;
+  }
+
+  .enable-fsq-grid {
+    padding: 0;
+    grid-template-columns: repeat(auto-fit, 250px);
+    grid-gap: 7px;
+  }
+
+  .fsq-layout {
+    padding: 0;
+  }
+
+  .fsq-title {
+    margin-left: 30px;
+  }
+  .fsq-box-setup img {
+    height: 120px;
   }
 }
 
@@ -783,7 +797,7 @@ footer i.mail {
     height: auto;
   }
 
-  .header-news > div {
+  .header-news>div {
     height: 200px;
     padding: 4px;
   }
@@ -813,13 +827,17 @@ footer i.mail {
   .fsq-title-author {
     display: block;
     width: 100%;
-    margin-left: 15px;
+    padding-left: 15px;
     font-size: 0.9em;
   }
 
   .fsq-title {
     font-size: 1.4em;
     margin-bottom: 30px;
+  }
+
+  .fsq-layout {
+    margin-left: 20px;
   }
 
   /* FUNDING */

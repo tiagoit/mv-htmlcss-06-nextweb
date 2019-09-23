@@ -65,6 +65,11 @@ nav ul li {
   padding-right: 13px;
 }
 
+.hamburger-menu {
+visibility: collapse;
+float: Right;
+}
+
 .first-nav,
 .third-nav {
   padding: 8px 15px;
@@ -232,8 +237,6 @@ nav ul li {
 .sub-news-category {
   font-size: 0.5em;
 }
-
-
 
 /* NEWS AND EVENTS  */
 
@@ -575,9 +578,6 @@ footer i.mail {
 
 /*    MEDIA/RESPONSIVE    */
 
-@media screen and (max-width: 1280px) {
-}
-
 @media screen and (max-width: 1024px) {
   header {
     display: grid;
@@ -601,6 +601,7 @@ footer i.mail {
   .responsive-tnw-logo {
     position: relative;
     left: 20px;
+    height: 80px;
   }
 
   .first-nav {
@@ -638,9 +639,43 @@ footer i.mail {
 }
 
 @media screen and (max-width: 768px) {
+  .hamburger-menu {
+    visibility: visible;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 10px 10px;
+
+  }
+
+  .first-nav, .second-nav {
+    visibility: hidden;
+  }
+
+  .responsive-tnw-logo {
+    position: relative;
+    left: 20px;
+    height: 45px;
+  }
+
+  .tnw-logo-header-responsive {
+    height: 45px;
+  }
+
+  .third-nav {
+    position: absolute;
+    top: 45px;
+  }
+
+  .third-nav a {
+    font-size: 2vw;
+  }
+
   .header-news {
     display: block;
     height: auto;
+    position: absolute;
+    top: 70px;
   }
 
   .header-news > div {

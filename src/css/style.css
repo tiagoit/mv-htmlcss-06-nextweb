@@ -140,7 +140,6 @@ nav ul li {
 
 .main-big-news::after, .sub-news::after {
   content:'';
-  display: table;
   position: absolute;
   top: 0;
   left: 0;
@@ -649,11 +648,6 @@ footer i.mail {
     padding: 4px;
   }
 
-  /* .main-big-news::after {
-    content: "";
-    background: none;
-  } */
-
   .main-big-news-title {
     font-size: 1.3em;
   }
@@ -668,6 +662,7 @@ footer i.mail {
 
   .fsq-box-setup {
     display: flex;
+    margin-bottom: 20px;
   }
 
   .fsq-box-setup img {
@@ -679,6 +674,15 @@ footer i.mail {
     display: block;
     width: 100%;
     margin-left: 15px;
+  }
+
+  .fsq-title {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+  }
+
+  .fsq-title-author {
+    font-size: 0.9em;
   }
 
   .deal {

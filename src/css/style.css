@@ -396,7 +396,7 @@ i.suitcase {
 
 .categories {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   max-width: 1192px;
   margin: 0 auto;
@@ -405,7 +405,8 @@ i.suitcase {
 
 .cat {
   flex: 1;
-  min-width: 320px;
+  min-width: 33.33333%;
+  max-width: 33.33333%;
   padding: 12px;
 }
 
@@ -443,7 +444,7 @@ i.suitcase {
 }
 
 .cat .heading {
-  margin: 12px;
+  margin: 8px;
   top: -110px;
   position: relative;
   color: #fff;
@@ -454,7 +455,6 @@ i.suitcase {
 }
 
 .cat .heading .author {
-  margin-top: 8px;
   font-size: 12px;
 }
 
@@ -466,7 +466,7 @@ i.suitcase {
 
 .cat .latest {
   display: flex;
-  margin-top: -100px;
+  margin-top: -94px;
   padding-top: 12px;
   color: #f42;
   background-color: rgba(255, 68, 34, 0.06);
@@ -540,12 +540,13 @@ i.suitcase {
 .deals-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .deal {
   flex: 1;
-  min-width: 200px;
+  min-width: calc(33.33333% - 16px);
+  max-width: calc(33.33333% - 16px);
   margin: 0 8px 24px;
   margin-bottom: 24px;
 }
@@ -745,9 +746,35 @@ footer i.mail {
   .fsq-box-setup img {
     height: 120px;
   }
+
+  /* FUNDING */
+  .funding .section-links {
+    float: none;
+    margin: -12px 0 16px 16px;
+  }
+
+  /* CATEGORY */
+  .cat .heading .title {
+    font-size: 15px;
+  }
+
+  .categories .cat {
+    min-width: 50%;
+  }
+
+  .categories .cat .image {
+    height: 320px;
+  }
+
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 767px) and (max-width: 1021px) {
+  .hide-on-tablet {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .hamburger-menu {
     visibility: visible;
     position: absolute;
@@ -835,11 +862,6 @@ footer i.mail {
   /* FUNDING */
   .funding .fund {
     min-width: 100%;
-  }
-
-  .funding .section-links {
-    float: none;
-    margin: -12px 0 16px 16px;
   }
 
   /* CATEGORIES */

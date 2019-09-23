@@ -25,6 +25,7 @@ h4 {
 
 header {
   width: 100%;
+  position: relative;
 }
 
 nav a {
@@ -64,6 +65,7 @@ nav ul li {
   float: right;
   padding-top: 5px;
 }
+
 
 .first-nav select {
   background: none;
@@ -108,11 +110,24 @@ nav ul li {
   height: 500px;
 }
 
-
 .main-big-news {
   position: relative;
   grid-column: span 2;
   grid-row: span 6;
+}
+
+.tnw-logo-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0.44turn, red 0%, red 20%, transparent 60%);
+  /* opacity: 0.8; */
+  width: 100%;
+  height: 100%;
+}
+
+.tnw-logo-header img {
+  filter: invert(100%);
 }
 
 .main-big-news img {
@@ -121,17 +136,6 @@ nav ul li {
   object-fit: cover;
 }
 
-.main-big-news::after {
-  content: '';
-  color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(0.44turn, red 0%, red 20%, transparent 60%);
-  opacity: 0.8;
-  width: 100%;
-  height: 100%;
-}
 
 .main-second-news,
 .main-third-news {
@@ -475,6 +479,9 @@ footer i.facebook {
 @media screen and (max-width: 1024px) {}
 
 @media screen and (max-width: 768px) {
+  .tnw-logo-header-responsive {
+    display: block;
+  }
   .main-news {
     display: block;
     height: auto;

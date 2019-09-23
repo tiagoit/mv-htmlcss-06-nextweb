@@ -66,8 +66,8 @@ nav ul li {
 }
 
 .hamburger-menu {
-visibility: collapse;
-float: Right;
+  visibility: collapse;
+  float: Right;
 }
 
 .first-nav,
@@ -298,7 +298,7 @@ float: Right;
   max-width: 1192px;
   margin: 0 auto;
   padding: 0 12px;
-  margin-bottom: 36px;
+  margin-bottom: 12px;
 }
 
 .funding h2 {
@@ -306,6 +306,16 @@ float: Right;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 24px;
+}
+
+.funding .section-links {
+  float: right;
+  margin-top: -36px;
+  color: #ff4422;
+}
+
+.funding .section-links > span:not(:last-child):after {
+  content: " | ";
 }
 
 .funds-wrapper {
@@ -317,6 +327,7 @@ float: Right;
 .fund {
   flex: 1;
   padding: 0 12px;
+  margin-bottom: 24px;
 }
 
 .fund img {
@@ -384,6 +395,11 @@ i.suitcase {
   font-size: 12px;
   opacity: 0.8;
   padding: 8px;
+}
+
+.fund .text a {
+  text-decoration: none;
+  opacity: 0.5;
 }
 
 /* CATEGORIES  */
@@ -742,7 +758,8 @@ footer i.mail {
     height: 70px;
   }
 
-  .first-nav, .second-nav {
+  .first-nav,
+  .second-nav {
     visibility: hidden;
   }
 
@@ -810,6 +827,16 @@ footer i.mail {
 
   .fsq-title-author {
     font-size: 0.9em;
+  }
+
+  /* FUNDING */
+  .funding .fund {
+    min-width: 100%;
+  }
+
+  .funding .section-links {
+    float: none;
+    margin: -12px 0 16px 16px;
   }
 
   /* CATEGORIES */

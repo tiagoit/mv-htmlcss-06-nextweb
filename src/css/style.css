@@ -506,6 +506,7 @@ footer i.facebook {
   .fsq-title-author {
     display: block;
     width: 100%;
+    margin-left: 15px;
   }
 
 }

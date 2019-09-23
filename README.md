@@ -1,6 +1,6 @@
 # The New Web (Responsive)
 
-Copy of an The New Web using Responsive Bootstrap Library.
+Copy of The New Web using responsive techniques.
 
 ### Technology
 

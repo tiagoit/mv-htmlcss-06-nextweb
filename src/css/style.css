@@ -645,7 +645,10 @@ footer i.mail {
     top: 0px;
     right: 0px;
     padding: 10px 10px;
+  }
 
+  nav {
+    height: 70px;
   }
 
   .first-nav, .second-nav {
@@ -674,8 +677,6 @@ footer i.mail {
   .header-news {
     display: block;
     height: auto;
-    position: absolute;
-    top: 70px;
   }
 
   .header-news > div {

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>TNW</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="icon" href="../imgs/tnw-favicon.png" type="image/png">
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="tnw-logo-header-responsive">
+      <img src="../imgs/tnw-logo-white.svg" class="responsive-tnw-logo" alt="The Next News logo"
+        style="width: 60px; " />
+    </div>
+    <nav>
+      <div class="first-nav">
+        <ul class="first-nav-float-left">
+          <li><a href="#">News</a></li>
+          <li>
+            <select id="events-select">
+              <option value="business">Business</option>
+            </select>
+          </li>
+          <li>
+            <select id="business-select">
+              <option value="business">Business</option>
+            </select>
+          </li>
+          <li><a href="#">AMAs</a></li>
+          <li><a href="#">Spaces</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+        </ul>
+
+        <ul class="first-nav-float-right">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="search-icon"><img src="../imgs/search.png" alt="search icon" style="width: 20px;" /></div>
+      <div class="hamburger-menu"><img src="../imgs/hamburger-menu.png" alt="collapsed menu" style="width: 20px;" />
+      </div>
+      <div class="second-nav">
+        <ul>
+          <li><a href="#">Latest</a></li>
+          <li><a href="#">Hard Fork</a></li>
+          <li><a href="#">Plugged</a></li>
+          <li><a href="#">Fundamentals</a></li>
+          <li><a href="#">Work 2030</a></li>
+        </ul>
+      </div>
+      <div class="third-nav">
+        <a href="#">How will blockchain impact fintech and business? Join Hard Fork Summit to find out &rarr;</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="header-news">
+    <div class="main-big-news">
+      <div class="tnw-logo-header"><img src="../imgs/tnw-logo-white.svg" alt="The Next News logo"
+          style="width: 400px; height: 120px;" /></div>
+      <div class="main-big-news-info">
+        <div class="main-big-news-title">
+          <div class="main-big-news-category"><a href="#">Tech</a></div>
+          <h1><a href="#">Google thinks it wasn't sexist to give its voice assistant a female voice</a></h1>
+          <div class="mbn-author-time-share">
+            <span>by </span><a href="#">Cara Curtis</a>
+            <span class="mbn-time"><img src="../imgs/clock-icon.png" alt="clock icon"
+                style="width:17px; filter: invert(100%);" class="mbn-icon" /> 40 minutes ago</span>
+            <span class="mbn-share"><img src="../imgs/share-icon.png" alt="share icon"
+                style="width: 17px; filter: invert(100%);" class="mbn-icon" /></span>
+          </div>
+        </div>
+        <div class="main-big-news-date">
+          <p>Friday &#8212; September 20, 2019</p>
+        </div>
+      </div>
+      <img src="../imgs/game.jpg" alt="game controllers" />
+    </div>
+
+    <div class="main-second-news sub-news">
+      <div class="sub-news-info">
+        <div class="sub-news-title">
+          <div class="sub-news-category">Etc</div>
+          <h1><a href="#">I forgot the title for this article</a></h1>
+          <div class="sub-author-time-share">
+            <span>by </span><a href="#">Some Author</a>
+            <span class="sub-news-time"><img src="../imgs/clock-icon.png" alt="clock icon"
+                style="width:17px; filter: invert(100%);" class="mbn-icon" /> 40 minutes ago</span>
+            <span class="mbn-share"><img src="../imgs/share-icon.png" alt="share icon"
+                style="width: 17px; filter: invert(100%);" class="mbn-icon" /></span>
+          </div>
+        </div>
+      </div>
+      <img src="../imgs/assistant.png" alt="assistant image" />
+
+    </div>
+
+    <div class="main-third-news sub-news">
+      <div class="sub-news-info">
+        <div class="sub-news-title">
+          <div class="sub-news-category"><a href="#">Etc</a></div>
+          <h1><a href="#">I forgot the title for this article</a></h1>
+          <div class="sub-author-time-share">
+            <span>by </span><a href="#">Some Author</a>
+            <span class="sub-news-time"><img src="../imgs/clock-icon.png" alt="clock icon"
+                style="width:17px; filter: invert(100%);" class="mbn-icon" /> 40 minutes ago</span>
+            <span class="mbn-share"><img src="../imgs/share-icon.png" alt="share icon"
+                style="width: 17px; filter: invert(100%);" class="mbn-icon" /></span>
+          </div>
+        </div>
+      </div><img src="../imgs/r-facebook.png" alt="facebook bot" />
+    </div>
+  </div>
+
+  <div class="fsq-layout">
+    <h1 class="fsq-title">Latest news &gt;</h1>
+    <div class="enable-fsq-grid enable-block">
+      <div class="fsq-box-setup">
+        <a href="#">
+          <img src="../imgs/thumbs-up.jpeg" alt="happy people" />
+        </a>
+        <div class="fsq-title-author">
+          <h4><a href="#">Ripple Labs wants the US to forget it's being sued for selling Ripple (XRP) illegally</a></h4>
+          <div class="author"><a href="#">David Canellis</a> &middot; <span>7 hours ago</span></div>
+        </div>
+      </div>
+
+      <div class="fsq-box-setup">
+        <a href="#">
+          <img src="../imgs/digi-marketing.jpg" alt="digital marketing" />
+        </a>
+        <div class="fsq-title-author">
+          <h4><a href="#">This digital marketing masterclass is a must for every new entrepreneur</a></h4>
+          <div class="author"><a href="#">TNW Deals</a> &middot; <span>7 hours ago</span></div>
+        </div>
+      </div>
+
+      <div class="fsq-box-setup">
+        <a href="#">
+          <img src="../imgs/google.jpg" alt="google" />
+        </a>
+        <div class="fsq-title-author">
+          <h4><a href="#">VPN apps with 500M+ installs caught serving disruptive ads to Android users</a></h4>
+          <div class="author"><a href="#">Ravie Lakshmanan</a> &middot; <span>7 hours ago</span></div>
+        </div>
+      </div>
+
+      <div class="fsq-box-setup">
+        <a href="#">
+          <img src="../imgs/iphone-dark.png" alt="iPhone dark mode" />
+        </a>
+        <div class="fsq-title-author">
+          <h4><a href="#">How to use iOS 13's dark mode like a boss</a></h4>
+          <div class="author"><a href="#">Ivan Mehta</a> &middot; <span>8 hours ago</span></div>
+        </div>
+      </div>
+
+      <div class="fsq-box-setup">
+        <a href="#">
+          <img src="../imgs/woman-write.png" alt="woman writing on whiteboard" />
+        </a>
+        <div class="fsq-title-author">
+          <h4><a href="#">How product managers can bring human insights to agile development</a></h4>
+          <div class="author"><a href="#">Michael Mace</a> &middot; <span>8 hours ago</span></div>
+        </div>
+      </div>
+
+      <div class="fsq-box-setup">
+        <a href="#">
+          <img src="../imgs/satoshi.jpeg" alt="Satoshi" />
+        </a>
+        <div class="fsq-title-author">
+          <h4><a href="#">Satoshi Nakaboto: 'Bitcoin network shifted the equivalent of 412 tons of gold in one day'</a>
+          </h4>
+          <div class="author"><a href="#">Satoshi Nakaboto</a> &middot; <span>10 hours ago</span></div>
+        </div>
+      </div>
+
+      <div class="fsq-box-setup">
+        <a href="#">
+          <img src="../imgs/revised-iphone.png" alt="revised iphone" />
+        </a>
+        <div class="fsq-title-author">
+          <h4><a href="#">The messy iOS 13 rollout shows Apple needs a revised release schedule</a></h4>
+          <div class="author"><a href="#">Ravie Lakshmanan</a> &middot; <span>11 hours ago</span></div>
+        </div>
+      </div>
+
+      <div class="fsq-box-setup">
+        <a href="#">
+          <img src="../imgs/black-phone.jpeg" alt="front and back of a black phone" />
+        </a>
+        <div class="fsq-title-author">
+          <h4><a href="#">Vivo's new phone has a dual-cam pop-up because what else is left to do?</a></h4>
+          <div class="author"><a href="#">Ivan Mehta</a> &middot; <span>12 hours ago</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fsq-layout">
+    <h1 class="fsq-title">Apple Special Event September 2019 &gt;</h1>
+
+    <div class="enable-fsq-grid enable-block">
+      <div class="fsq-box-setup">
+        <a href="#">
+          <img src="../imgs/apple-plan.png" alt="apple plans" />
+        </a>
+        <div class="fsq-title-author">
+          <h4><a href="#">How Apple plans to overtake Android cameras with new iPhone 11 features</a></h4>
+          <div class="author"><a href="#">Ivan Mehta</a> &middot; <span>9 days ago</span></div>
+        </div>
+      </div>
+
+      <div class="fsq-box-setup">
+        <a href="#">
+          <img src="../imgs/new-iphones.jpeg" alt="iphone 11 lineup" />
+        </a>
+        <div class="fsq-title-author">
+          <h4><a href="#">Here's what the iPhone 11 lineup costs in India - and what you can buy instead</a></h4>
+          <div class="author"><a href="#">Ivan Mehta</a> &middot; <span>9 days ago</span></div>
+        </div>
+      </div>
+
+      <div class="fsq-box-setup">
+        <a href="#">
+          <img src="../imgs/iphone-prices.jpg" alt="iphone prices" />
+        </a>
+        <div class="fsq-title-author">
+          <h4><a href="#">Apple details its new trade-in program and Watch Studio</a></h4>
+          <div class="author"><a href="#">Rachel Kaser</a> &middot; <span>9 days ago</span></div>
+        </div>
+      </div>
+
+      <div class="fsq-box-setup">
+        <a href="#">
+          <img src="../imgs/colorful-iphone.jpg" alt="iphone color options" />
+        </a>
+        <div class="fsq-title-author">
+          <h4><a href="#">Everything Apple announced at its 2019 iPhone event</a></h4>
+          <div class="author"><a href="#">Bryan Clark</a> &middot; <span>10 days ago</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="funding">
+    <h2>Latest funding rounds on Index.co ></h2>
+    <div class="section-links">
+      <span>Add info</span>
+      <span>Get updates by email</span>
+      <span>See more</span>
+    </div>
+
+    <div class="funds-wrapper">
+      <div class="fund">
+        <img src="../imgs/fund-01.jpg" alt="fund 01">
+        <h3 class="title">Curve</h3>
+        <div class="val">
+          <div class="value">$55M</div>
+          <div class="series">SERIES B</div>
+        </div>
+        <div class="tags">
+          <div><i class="tag"></i>Mobile, +5</div>
+          <div><i class="suitcase"></i>Speedinvest, +3</div>
+        </div>
+        <div class="text">
+          The London fintech aiming to become the 'Spotify for money' raised $55 million using this pitch deck <a
+            href="link.html">on Business Insider</a>
+        </div>
+      </div>
+
+      <div class="fund">
+        <img src="../imgs/fund-02.jpg" alt="fund 02">
+        <h3 class="title">Curve</h3>
+        <div class="val">
+          <div class="value">$55M</div>
+          <div class="series">SERIES B</div>
+        </div>
+        <div class="tags">
+          <div><i class="tag"></i>Mobile, +5</div>
+          <div><i class="suitcase"></i>Speedinvest, +3</div>
+        </div>
+        <div class="text">
+          The London fintech aiming to become the 'Spotify for money' raised $55 million using this pitch deck <a
+            href="link.html">on Business Insider</a>
+        </div>
+      </div>
+
+      <div class="fund">
+        <img src="../imgs/fund-03.jpg" alt="fund 03">
+        <h3 class="title">Curve</h3>
+        <div class="val">
+          <div class="value">$55M</div>
+          <div class="series">SERIES B</div>
+        </div>
+        <div class="tags">
+          <div><i class="tag"></i>Mobile, +5</div>
+        </div>
+        <div class="text">
+          The London fintech aiming to become the 'Spotify for money' raised $55 million using this pitch deck <a
+            href="link.html">on Business Insider</a>
+        </div>
+      </div>
+
+      <div class="fund">
+        <img src="../imgs/fund-04.png" alt="fund 04">
+        <h3 class="title">Curve</h3>
+        <div class="val">
+          <div class="value">$55M</div>
+          <div class="series">SERIES B</div>
+        </div>
+        <div class="tags">
+          <div><i class="tag"></i>Mobile, +5</div>
+          <div><i class="suitcase"></i>Speedinvest, +3</div>
+        </div>
+        <div class="text">
+          The London fintech aiming to become the 'Spotify for money' raised $55 million using this pitch deck <a
+            href="link.html">on Business Insider</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="categories">
+    <div class="cat">
+      <h2 class="title">Apps ></h2>
+      <div class="overlay"></div>
+      <div class="image cat-01"></div>
+      <div class="heading">
+        <div class="tag">MOST POPULAR</div>
+        <div class="title">How to use iOS 13's dark mode like a boss</div>
+        <div class="author">Ivan Mehta . 6 hours ago</div>
+      </div>
+      <div class="latest">
+        <div>
+          <div class="tag">LATEST</div>
+          <div class="text">WhatsApp's 'Delete for Everyone' doesn't delete media files from iPhones</div>
+        </div>
+        <img src="../imgs/cat-01.2.jpg" alt="">
+      </div>
+      <ul>
+        <li>The excellent Pocket Casts podcast app is now free on Android and iOS</li>
+        <li>Apple Arcade strikes a great mix of popular and obscure games</li>
+        <li>MoviePass is effectively dead and will shut down September 14</li>
+        <li>Google Docs now shows word count as you type (thank god)</li>
+        <li>Microsoft unveils new To Do as Wunderlist founder mourns its imminent death</li>
+      </ul>
+    </div>
+
+    <div class="cat">
+      <h2 class="title">Gear ></h2>
+      <div class="image cat-02"></div>
+      <div class="heading">
+        <div class="tag">MOST POPULAR</div>
+        <div class="title">Roku's new Ultra streaming box is faster and adds custom app shortcuts</div>
+        <div class="author">Napier Lopez . 1 day ago</div>
+      </div>
+      <div class="latest">
+        <div>
+          <div class="tag">LATEST</div>
+          <div class="text">The Huawei Mate 30 Pro will ship without Google Play. That might not be a bad thing</div>
+        </div>
+        <img src="../imgs/cat-02.2.jpg" alt="">
+      </div>
+      <ul>
+        <li>With EMUI 10, Huawei courts developers</li>
+        <li>CHEAP: Save big on ASUS' powerful new ROG Phone 2 gaming handset with $180 off</li>
+        <li>Huawei launches Mate 30 Pro with quad-camera system and waterfall display</li>
+        <li>How to watch Huawei's Mate 30 event - and what to expect</li>
+        <li>DxOMark announces new 'Night' and 'Wide' scores for phone cameras</li>
+      </ul>
+    </div>
+
+    <div class="cat">
+      <h2 class="title">Apps ></h2>
+      <div class="overlay"></div>
+      <div class="image cat-01"></div>
+      <div class="heading">
+        <div class="tag">MOST POPULAR</div>
+        <div class="title">How to use iOS 13's dark mode like a boss</div>
+        <div class="author">Ivan Mehta . 6 hours ago</div>
+      </div>
+      <div class="latest">
+        <div>
+          <div class="tag">LATEST</div>
+          <div class="text">WhatsApp's 'Delete for Everyone' doesn't delete media files from iPhones</div>
+        </div>
+        <img src="../imgs/cat-01.2.jpg" alt="">
+      </div>
+      <ul>
+        <li>The excellent Pocket Casts podcast app is now free on Android and iOS</li>
+        <li>Apple Arcade strikes a great mix of popular and obscure games</li>
+        <li>MoviePass is effectively dead and will shut down September 14</li>
+        <li>Google Docs now shows word count as you type (thank god)</li>
+        <li>Microsoft unveils new To Do as Wunderlist founder mourns its imminent death</li>
+      </ul>
+    </div>
+
+    <div class="cat">
+      <h2 class="title">Gear ></h2>
+      <div class="image cat-02"></div>
+      <div class="heading">
+        <div class="tag">MOST POPULAR</div>
+        <div class="title">Roku's new Ultra streaming box is faster and adds custom app shortcuts</div>
+        <div class="author">Napier Lopez . 1 day ago</div>
+      </div>
+      <div class="latest">
+        <div>
+          <div class="tag">LATEST</div>
+          <div class="text">The Huawei Mate 30 Pro will ship without Google Play. That might not be a bad thing</div>
+        </div>
+        <img src="../imgs/cat-02.2.jpg" alt="">
+      </div>
+      <ul>
+        <li>With EMUI 10, Huawei courts developers</li>
+        <li>CHEAP: Save big on ASUS' powerful new ROG Phone 2 gaming handset with $180 off</li>
+        <li>Huawei launches Mate 30 Pro with quad-camera system and waterfall display</li>
+        <li>How to watch Huawei's Mate 30 event - and what to expect</li>
+        <li>DxOMark announces new 'Night' and 'Wide' scores for phone cameras</li>
+      </ul>
+    </div>
+
+    <div class="cat">
+      <h2 class="title">Apps ></h2>
+      <div class="overlay"></div>
+      <div class="image cat-01"></div>
+      <div class="heading">
+        <div class="tag">MOST POPULAR</div>
+        <div class="title">How to use iOS 13's dark mode like a boss</div>
+        <div class="author">Ivan Mehta . 6 hours ago</div>
+      </div>
+      <div class="latest">
+        <div>
+          <div class="tag">LATEST</div>
+          <div class="text">WhatsApp's 'Delete for Everyone' doesn't delete media files from iPhones</div>
+        </div>
+        <img src="../imgs/cat-01.2.jpg" alt="">
+      </div>
+      <ul>
+        <li>The excellent Pocket Casts podcast app is now free on Android and iOS</li>
+        <li>Apple Arcade strikes a great mix of popular and obscure games</li>
+        <li>MoviePass is effectively dead and will shut down September 14</li>
+        <li>Google Docs now shows word count as you type (thank god)</li>
+        <li>Microsoft unveils new To Do as Wunderlist founder mourns its imminent death</li>
+      </ul>
+    </div>
+
+    <div class="cat">
+      <h2 class="title">Gear ></h2>
+      <div class="image cat-02"></div>
+      <div class="heading">
+        <div class="tag">MOST POPULAR</div>
+        <div class="title">Roku's new Ultra streaming box is faster and adds custom app shortcuts</div>
+        <div class="author">Napier Lopez . 1 day ago</div>
+      </div>
+      <div class="latest">
+        <div>
+          <div class="tag">LATEST</div>
+          <div class="text">The Huawei Mate 30 Pro will ship without Google Play. That might not be a bad thing</div>
+        </div>
+        <img src="../imgs/cat-02.2.jpg" alt="">
+      </div>
+      <ul>
+        <li>With EMUI 10, Huawei courts developers</li>
+        <li>CHEAP: Save big on ASUS' powerful new ROG Phone 2 gaming handset with $180 off</li>
+        <li>Huawei launches Mate 30 Pro with quad-camera system and waterfall display</li>
+        <li>How to watch Huawei's Mate 30 event - and what to expect</li>
+        <li>DxOMark announces new 'Night' and 'Wide' scores for phone cameras</li>
+      </ul>
+    </div>
+
+    <div class="cat">
+      <h2 class="title">Apps ></h2>
+      <div class="overlay"></div>
+      <div class="image cat-01"></div>
+      <div class="heading">
+        <div class="tag">MOST POPULAR</div>
+        <div class="title">How to use iOS 13's dark mode like a boss</div>
+        <div class="author">Ivan Mehta . 6 hours ago</div>
+      </div>
+      <div class="latest">
+        <div>
+          <div class="tag">LATEST</div>
+          <div class="text">WhatsApp's 'Delete for Everyone' doesn't delete media files from iPhones</div>
+        </div>
+        <img src="../imgs/cat-01.2.jpg" alt="">
+      </div>
+      <ul>
+        <li>The excellent Pocket Casts podcast app is now free on Android and iOS</li>
+        <li>Apple Arcade strikes a great mix of popular and obscure games</li>
+        <li>MoviePass is effectively dead and will shut down September 14</li>
+        <li>Google Docs now shows word count as you type (thank god)</li>
+        <li>Microsoft unveils new To Do as Wunderlist founder mourns its imminent death</li>
+      </ul>
+    </div>
+
+    <div class="cat">
+      <h2 class="title">Gear ></h2>
+      <div class="image cat-02"></div>
+      <div class="heading">
+        <div class="tag">MOST POPULAR</div>
+        <div class="title">Roku's new Ultra streaming box is faster and adds custom app shortcuts</div>
+        <div class="author">Napier Lopez . 1 day ago</div>
+      </div>
+      <div class="latest">
+        <div>
+          <div class="tag">LATEST</div>
+          <div class="text">The Huawei Mate 30 Pro will ship without Google Play. That might not be a bad thing</div>
+        </div>
+        <img src="../imgs/cat-02.2.jpg" alt="">
+      </div>
+      <ul>
+        <li>With EMUI 10, Huawei courts developers</li>
+        <li>CHEAP: Save big on ASUS' powerful new ROG Phone 2 gaming handset with $180 off</li>
+        <li>Huawei launches Mate 30 Pro with quad-camera system and waterfall display</li>
+        <li>How to watch Huawei's Mate 30 event - and what to expect</li>
+        <li>DxOMark announces new 'Night' and 'Wide' scores for phone cameras</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="deals">
+    <h3 class="title">Latest deals ></h3>
+      <span class="see-all">See all deals</span>
+
+    <div class="deals-wrapper">
+      <div class="deal">
+        <img src="../imgs/deal-01.jpg" alt="deal-01">
+        <div class="title">The Ultimate Google Analytics Mastery Bundle</div>
+        <div class="price"><span class="old">$399</span> $19.99</div>
+      </div>
+
+      <div class="deal">
+        <img src="../imgs/deal-02.jpg" alt="deal-02">
+        <div class="title">12min Book Summary Library: Lifetime Premium Subscription</div>
+        <div class="price"><span class="old">$346</span> $39.99</div>
+      </div>
+
+      <div class="deal">
+        <img src="../imgs/deal-01.jpg" alt="deal-01">
+        <div class="title">The Ultimate Google Analytics Mastery Bundle</div>
+        <div class="price"><span class="old">$399</span> $19.99</div>
+      </div>
+
+      <div class="deal">
+        <img src="../imgs/deal-02.jpg" alt="deal-02">
+        <div class="title">12min Book Summary Library: Lifetime Premium Subscription</div>
+        <div class="price"><span class="old">$346</span> $39.99</div>
+      </div>
+
+      <div class="deal">
+        <img src="../imgs/deal-01.jpg" alt="deal-01">
+        <div class="title">The Ultimate Google Analytics Mastery Bundle</div>
+        <div class="price"><span class="old">$399</span> $19.99</div>
+      </div>
+
+      <div class="deal">
+        <img src="../imgs/deal-02.jpg" alt="deal-02">
+        <div class="title">12min Book Summary Library: Lifetime Premium Subscription</div>
+        <div class="price"><span class="old">$346</span> $39.99</div>
+      </div>
+
+      <div class="deal">
+        <img src="../imgs/deal-01.jpg" alt="deal-01">
+        <div class="title">The Ultimate Google Analytics Mastery Bundle</div>
+        <div class="price"><span class="old">$399</span> $19.99</div>
+      </div>
+
+      <div class="deal">
+        <img src="../imgs/deal-02.jpg" alt="deal-02">
+        <div class="title">12min Book Summary Library: Lifetime Premium Subscription</div>
+        <div class="price"><span class="old">$346</span> $39.99</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="first-row">
+      <ul class="social">
+        <li>
+          <a href="facebook.com"><i class="facebook"></i></a>
+        </li>
+        <li>
+          <a href="twitter.com"><i class="twitter"></i></a>
+        </li>
+        <li>
+          <a href="youtube.com"><i class="youtube"></i></a>
+        </li>
+        <li>
+          <a href="instagram.com"><i class="instagram"></i></a>
+        </li>
+        <li>
+          <a href="pinterest.com"><i class="pinterest"></i></a>
+        </li>
+        <li>
+          <a href="rss.com"><i class="rss"></i></a>
+        </li>
+        <li>
+          <a href="mail.com"><i class="mail"></i></a>
+        </li>
+      </ul>
+
+      <ul class="links">
+        <li>Events</li>
+        <li>About</li>
+        <li>Team</li>
+        <li>Advertise</li>
+        <li>Jobs</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="second-row">
+      <span class="white">The Next Web</span> © 2006–2019 The Next Web B.V.
+      Made with <span class="love">♥</span> in Amsterdam. Powered by
+      <span class="white">StackPath</span>
+    </div>
+  </footer>
+</body>
+
+</html>

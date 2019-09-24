@@ -1,0 +1,12 @@
+
+src/css/style.css
+ 153:21  ✖  Expected newline after "," in a multi-line function                                  function-comma-newline-after   
+ 153:22  ✖  Unexpected whitespace at end of line                                                 no-eol-whitespace              
+ 537:1   ✖  Expected selector ".deals > .title" to come before selector ".cat .heading .title"   no-descending-specificity      
+ 563:1   ✖  Expected selector ".deal .title" to come before selector ".cat .heading .title"      no-descending-specificity      
+ 579:1   ✖  Expected selector ".deal img" to come before selector ".cat .latest > img"           no-descending-specificity      
+ 583:1   ✖  Expected selector ".deal a" to come before selector ".fund .text a"                  no-descending-specificity      
+ 598:1   ✖  Expected selector "footer ul" to come before selector ".cat ul"                      no-descending-specificity      
+ 647:1   ✖  Expected selector "footer i" to come before selector ".fund i"                       no-descending-specificity      
+ 699:15  ✖  Expected newline after ":" with a multi-line declaration                             declaration-colon-newline-after
+
